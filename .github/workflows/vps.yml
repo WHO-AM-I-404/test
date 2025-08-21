@@ -1,4 +1,4 @@
-name: Free VPS
+name: VPS Linux
 
 on:
   workflow_dispatch:
@@ -7,9 +7,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Info sistem
+      - name: Info Sistem
         run: |
-          echo "Kamu sekarang ada di VM Linux GitHub"
+          echo " VM GitHub berhasil jalan!"
           uname -a
           lsb_release -a
           free -h
+          df -h
